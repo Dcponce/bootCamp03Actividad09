@@ -2,7 +2,7 @@
 
 El proceso, conocido como Machine Learning Operations (MLOps), generalmente sigue un ciclo de vida que se puede dividir en varias fases clave:
 
-- 1. **Preparación del Modelo**
+1. **Preparación del Modelo**
 Antes de poner el modelo en un entorno de producción, es crucial asegurarlo y prepararlo. Esto incluye:
 
 - **Serialización**: Convertir el modelo entrenado en un formato de archivo que pueda ser guardado y cargado. Los formatos comunes incluyen pickle, joblib o formatos más avanzados como ONNX (Open Neural Network Exchange).
@@ -11,7 +11,7 @@ Antes de poner el modelo en un entorno de producción, es crucial asegurarlo y p
 
 - **Optimización**: Ajustar el modelo para que sea más eficiente en cuanto a tiempo de inferencia y uso de recursos. Esto puede incluir la cuantización (reducir la precisión numérica de los parámetros) o la poda de la red neuronal.
 
-- 2. **Despliegue** (Deployment)
+2. **Despliegue** (Deployment)
 El despliegue es el paso en el que el modelo se hace accesible para realizar inferencias. Existen varias formas de hacerlo, dependiendo del caso de uso y del tipo de aplicación:
 
 - **API Web**: Es el método más común. El modelo se integra en una API RESTful que puede ser consumida por otras aplicaciones. Frameworks como Flask o FastAPI en Python son muy populares para este propósito. Los usuarios envían datos a la API y esta devuelve las predicciones del modelo.
@@ -22,7 +22,7 @@ El despliegue es el paso en el que el modelo se hace accesible para realizar inf
 
 - **Integrado en la aplicación**: El modelo es parte del código de la aplicación. Esto es común en aplicaciones de escritorio o para procesos que no necesitan una API.
 
-- 3. **Monitoreo y Mantenimiento**
+3. **Monitoreo y Mantenimiento**
 Una vez que el modelo está en producción, el trabajo no ha terminado. Es crucial monitorear su rendimiento y salud:
 
 - **Monitoreo del rendimiento**: Se mide el tiempo de respuesta, el uso de CPU/GPU y la memoria. Si el rendimiento disminuye, puede ser una señal de un problema.
